@@ -239,8 +239,7 @@
 							<p>
 								This is my donkeycar which was built using a standard 1/16th RC car (Exceed RC Blaze), a raspberry pi 3b+,
 								and a donkeycar kit which contained the servo driver, camera, and 3D printed parts. After collecting data
-								from the camera, Keras was utilized to create a self-driving model for this specific track made in my house
-								as shown below.
+								from the camera, Keras was utilized to create a self-driving model and traffic sign classification.
 							</p>
 
 							<br>
@@ -258,14 +257,35 @@
 							</p>
 
 							<img src="images/donkeycar_training.png" alt="" style="width:350px;height:300px;max-width:47.5%;max-height:45%;"/>
-							<img src="images/secondpilot_training.png" alt="" style="width:350px;height:300px;max-width:47.5%;max-height:45%;"/>
+							<img src="images/model_2_latent.png" alt="" style="width:350px;height:300px;max-width:47.5%;max-height:45%;"/>
 
 							<p>
 								The two charts above are of two different sets of data from the same track. I collected data by driving the donkeycar
 								around the track about 15 times for each dataset using a playstation 3 controller. The chart on the left shows my first 
 								attempt at collecting data which was admittedly poor and caused the autopilot to crash frequently. However, on the second 
-								try I collected much better data which resulted in the car driving smoothly within the bounds of the track. 
+								try I collected much better data which resulted in the car driving smoothly within the bounds of the track. Using the data
+								from the second attempt, I trained different models including linear, 3D, RNN, categorical, and latent in which the latent model
+								performed the best.
 							</p>
+							
+							<video style="min-width: 48%;max-width:48%;height:400px" controls>
+								<source src="images/traffic2.mp4" type="video/mp4" style = "float: right;">
+							</video> 
+							<p>The video above shows a small side project using the donkeycar's camera, ROS, yolov3, and Keras. The traffic sign detection
+								and classification models were created by modifying and merging code from two different people, Murtaza Hassan and Sergio 
+								from Pysource (links at bottom). Then I implemented ROS to relay information from the camera by subscribing to the 
+								raspicam_node topic. I intended to then use ROS to implement low level control for the car based off specific the specific
+								traffic signs being seen, however the framerate from the camera was far too low for it to be useful. 
+							</p>
+
+							<h5>Sources</h5>
+							<ul>
+								<li><a href="https://docs.donkeycar.com/">Donkeycar Guide</a> </li>
+								<li><a href="https://www.murtazahassan.com/classify-traffic-signs-using-cnn/">Murtaza Hassan</a></li>
+								<li><a href="https://pysource.com/2020/04/02/train-yolo-to-detect-a-custom-object-online-with-free-gpu/">Pysource</a></li>
+								<li><a href="https://github.com/makdderrick/Traffic-Sign-Detection-Classification">My Code</a></li>
+							</ul>
+
 						</article>
 					
 						<!-- Contact -->
@@ -309,16 +329,8 @@
 							<div class="row">
 								<div class="column">
 
-									<a href="images/tiltrotor_design.png" data-lightbox="tiltrotor_design" data-title="Tiltrotor Design">
-										<img src="images/tiltrotor_design.png" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
-									</a>
-
-									<a href="images/gymnastic_rings_stand.jpg" data-lightbox="gymnastic_stand" data-title="Gymnastic Ring Stand">
-										<img src="images/gymnastic_rings_stand.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
-									</a>
-
-									<a href="images/motor_mount_picture.JPG" data-lightbox="motor_mount" data-title="Motor Mount">
-										<img src="images/motor_mount_picture.JPG" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									<a href="images/deadlift_wedges.jpg" data-lightbox="motor_mount" data-title="Motor Mount">
+										<img src="images/deadlift_wedges.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
 									<a href="images/track.jpg" data-lightbox="motor_mount" data-title="Motor Mount">
@@ -329,6 +341,17 @@
 										<img src="images/landscape_3dprinter.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
+									<a href="images/tiltrotor_design.png" data-lightbox="tiltrotor_design" data-title="Tiltrotor Design">
+										<img src="images/tiltrotor_design.png" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									</a>
+									
+									<a href="images/gymnastic_rings_stand.jpg" data-lightbox="gymnastic_stand" data-title="Gymnastic Ring Stand">
+										<img src="images/gymnastic_rings_stand.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									</a>
+
+									<a href="images/motor_mount_picture.JPG" data-lightbox="motor_mount" data-title="Motor Mount">
+										<img src="images/motor_mount_picture.JPG" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									</a>
 
 								</div>
 							</div>
