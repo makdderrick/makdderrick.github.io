@@ -163,19 +163,37 @@
 								<img src="images/robotcontroller.jpg" alt="" style="width:400px;height:400px"/>
 								<p>The controller was the second part of the project in which students were told to
 								   create a controller to control a computer mouse and steer a 
-								   blob resembling the car in a game called Agar.io.
+								   blob resembling the car in a game called agar.io.
 									<br>
 									<br>
 								   I personally chose to use a proportional controller with a high gain rate to 
 								   allow for simple yet responsive steering based off of the value of the left 
-								   potentiometer shown above. The right servo above served to control the speed
+								   potentiometer shown above. The right potentiometer above served to control the speed
 								   of the car which varied the distance the mouse traveled in front of the blob
 								   in the game. I created a three speed system which would allow me to carefully
 								   control the amount of air expended so that I could outlast the other students
-								   in our competitions held at the end of the course. Due to some luck and my 
-								   design choices, I managed to place 6th out of over 200 students.
+								   in our competitions held at the end of the course. Due my design choices and a bit
+								   of luck, I managed to place 6th out of over 200 students.
 								</p>
 							</span>
+
+							<span>
+								<a href="images/steering_torque.jpg" data-lightbox="motor_mount" data-title="Steering Torque">
+									<img src="images/steering_torque.jpg" alt="" style="min-width:75%;height:400px"/>
+								</a>
+								<p>
+									Using MATLAB, I plotted the simulation steering torque with different gain rates
+									and ended up using a gain of 100. This was due to the fact that when actually using
+									the controller to play agar.io, the overcompensations from the large gain allowed me
+									to reach my desired angle much quicker without too much oscillation.
+								</p>
+							</span>
+
+							<br>
+
+							<p>
+								The code can be found here: <a href="https://github.com/makdderrick/MAE-106-Final-Project">https://github.com/makdderrick/MAE-106-Final-Project</a>
+							</p>
 
 
 						</article>
@@ -271,11 +289,11 @@
 							<video style="min-width: 48%;max-width:60%;height:400px" controls>
 								<source src="images/traffic2.mp4" type="video/mp4" style = "float: right;">
 							</video> 
-							<p>The video above shows a small side project using the donkeycar's camera, ROS, yolov3, and Keras. The traffic sign detection
+							<p>The video above shows a side project using the donkeycar's camera, ROS, yolov3, and Keras. The traffic sign detection
 								and classification models were created by modifying and merging code from two different people, Murtaza Hassan and Sergio 
 								from Pysource (links at bottom). Then I implemented ROS to relay information from the camera by subscribing to the 
-								raspicam_node topic. I intended to then use ROS to implement low level control for the car based off specific the specific
-								traffic signs being seen, however the framerate from the camera was far too low for it to be useful. 
+								raspicam_node topic. I intended to then use ROS to implement low level control for the car based off the specific
+								traffic signs being seen, however, the framerate from the camera was far too low for it to be useful. 
 							</p>
 
 							<h5>Sources</h5>
@@ -329,15 +347,15 @@
 							<div class="row">
 								<div class="column">
 
-									<a href="images/deadlift_wedges.jpg" data-lightbox="motor_mount" data-title="Motor Mount">
+									<a href="images/deadlift_wedges.jpg" data-lightbox="motor_mount" data-title="Deadlift Wedge">
 										<img src="images/deadlift_wedges.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
-									<a href="images/track.jpg" data-lightbox="motor_mount" data-title="Motor Mount">
+									<a href="images/track.jpg" data-lightbox="motor_mount" data-title="Track">
 										<img src="images/track.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
-									<a href="images/landscape_3dprinter.jpg" data-lightbox="motor_mount" data-title="Motor Mount">
+									<a href="images/landscape_3dprinter.jpg" data-lightbox="motor_mount" data-title="3D Printer">
 										<img src="images/landscape_3dprinter.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
