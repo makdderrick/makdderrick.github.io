@@ -120,6 +120,27 @@
 								<div class="row">
 									<div class="column">
 										<figure style="float:left;">
+											<a href="#balance_bot">
+												<img src="images/balance front_wood_2.jpg" alt="" style="width:250px;height:250px;max-width: 45%;"/>
+											</a>
+											
+
+											<figcaption style="float:right;max-width: 50%;min-width: 55%;padding-left: 15px;">
+												<a href="#balance_bot">
+													<u>Self-balancing Robot</u>
+												</a>
+												
+												<p>
+													A personal project using an arduino nano, IMU, H-Bridge motor driver, and two dc motors.
+												</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="column">
+										<figure style="float:left;">
 											<a href ="#workout_data">
 											<img src="images/workout_data_official.png" alt="" style="width:250px;height:250px;max-width: 45%;"/>
 											</a>
@@ -305,7 +326,36 @@
 							</ul>
 
 						</article>
-					
+
+						<article id="balance_bot">
+							<h2 class="major">Balance Bot</h2>
+							<img src ="images/balance front_wood_2.jpg" style ="min-width:70%;height: 450px;margin-left: auto; margin-right: auto;display: block;"/>
+							<p>
+								This is a small robot that can balance on two wheels using an arduino nano and an MPU6050 IMU. I built this robot by following a guide and
+								using spare parts I had from past projects which included everything except the chassis and the IMU. I designed the chassis in Solidworks 
+								and then 3D printed it. After soldering all the necessary pieces and assembling the electronics onto the chassis, I calibrated the IMU and
+								uploaded the sketch given by the guide. From there, I manually tuned the PID values using a systematic and straightforward approach which involved: 
+								setting all the gains to zero, increasing P until oscillations were occurring, increasing D to minimize those oscillations, and increasing 
+								I to reduce the time to reach stabilization. 
+							</p>
+							<p>
+								Overall, this was a fun and simple project that helped me to learn more about designing 3D printed parts and physically seeing the effects changing
+								PID values.
+							</p>
+
+							<video style="min-width: 48%;max-width:48%;height:400px" controls>
+								<source src="images/bumps_dumbbell.mp4" type="video/mp4" style = "float: left;">
+							</video> 
+
+							<video style="min-width: 48%;max-width:48%;height:400px" controls>
+								<source src="images/triple_slap.mp4" type="video/mp4" style = "float: left;">
+							</video> 
+
+							<p>
+								Source: <a href = "https://github.com/kurimawxx00/arduino-self-balancing-robot">https://github.com/kurimawxx00/arduino-self-balancing-robot</a>
+							</p>
+
+						</article>
 						<!-- Contact -->
 <!--						<article id="contact">
 								<h2 class="major">Contact</h2>
@@ -346,16 +396,19 @@
 							<h6>(click back arrow to return)</h6>
 							<div class="row">
 								<div class="column">
+									<a href="images/balance_chassis_best.JPG" data-lightbox="self-balance chassis" data-title="Self-balance Chassis">
+										<img src="images/balance_chassis_best.JPG" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									</a>
 
-									<a href="images/deadlift_wedges.jpg" data-lightbox="motor_mount" data-title="Deadlift Wedge">
+									<a href="images/deadlift_wedges.jpg" data-lightbox="deadlift_wedges" data-title="Deadlift Wedge">
 										<img src="images/deadlift_wedges.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
-									<a href="images/track.jpg" data-lightbox="motor_mount" data-title="Track">
+									<a href="images/track.jpg" data-lightbox="track" data-title="Track">
 										<img src="images/track.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
-									<a href="images/landscape_3dprinter.jpg" data-lightbox="motor_mount" data-title="3D Printer">
+									<a href="images/landscape_3dprinter.jpg" data-lightbox="prusa_printer" data-title="3D Printer">
 										<img src="images/landscape_3dprinter.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
 
