@@ -29,7 +29,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Derrick Mak</h1>
-								<p>A mechanical engineer with a passion for learning.</p>
+								<p>Passionate, innovative, results-driven mechanical engineer</p>
 							</div>
 						</div>
 						<nav>
@@ -52,11 +52,10 @@
 								<img src="images/toughmudderpic.jpg" alt="" style="height:300px; width:300px; border-radius:50%; display:block; margin-left:auto; margin-right:auto; object-fit:cover;"/>
 								<br>
 								<p>
-									Hey, my name is Derrick Mak, and I am a mechanical engineer graduate from UCI with experience in consumer electronics.
-									In my free time, I enjoy doing all sorts of physical activities such as weightlifting, boxing, hiking, volleyball, and even pickleball.
-									I have also been trying to learn piano for two years now, though I am not very good!
+									Passionate and results-driven Mechanical Engineer with 4 years of experience in consumer electronics, specializing in product design and manufacturing. I thrive at the intersection of innovation and practicality, turning ideas into high-quality, manufacturable products that make a real impact.
+									<br>
+									Outside of engineering, I love lifting weights, playing volleyball, and eating good food.
 								</p>
-
 								<h3>
 									Contact info:
 								</h3>
@@ -70,6 +69,48 @@
 							<article id="projects">
 								<h2 class="major">Projects</h2>
 								<!--	<img src="images/robotcontroller.jpg" alt="" style="width:250px;height:250px;"/> -->
+
+								<div class="row">
+									<div class="column">
+										<figure style="float:left;">
+											<a href="#shredder">
+												<img src="images/shredder.png" alt="" style="width:250px;height:250px;max-width: 45%;"/>
+											</a>
+											
+
+											<figcaption style="float:right;max-width: 50%;min-width: 55%;padding-left: 15px;">
+												<a href="#shredder">
+													<u>simplehuman Shredder</u>
+												</a>
+												
+												<p>
+													Compact, silent shredder designed for use on a desktop or hanging on a  simplehuman trash can												
+												</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="column">
+										<figure style="float:left;">
+											<a href="#sensorcan">
+												<img src="images/scn25.png.png" alt="" style="width:250px;height:250px;max-width: 45%;"/>
+											</a>
+											
+
+											<figcaption style="float:right;max-width: 50%;min-width: 55%;padding-left: 15px;">
+												<a href="#sensorcan">
+													<u>simplehuman Sensor Can</u>
+												</a>
+												
+												<p>
+													Voice and motion activated sensor trash can												
+												</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
 
 								<div class="row">
 									<div class="column">
@@ -296,9 +337,7 @@
 							<br>
 
 							<p>
-								This is my donkeycar which was built using a standard 1/16th RC car (Exceed RC Blaze), a raspberry pi 3b+,
-								and a donkeycar kit which contained the servo driver, camera, and 3D printed parts. After collecting data
-								from the camera, Keras was utilized to create a self-driving model and traffic sign classification.
+								This is my donkeycar which was built using a standard 1/16th RC car (Exceed RC Blaze), a raspberry pi 3b+, and a donkeycar kit which contained the servo driver, camera, and 3D printed parts. After collecting data from the camera, Keras was utilized to create a self-driving model and traffic sign classification.
 							</p>
 
 							<br>
@@ -319,22 +358,14 @@
 							<img src="images/model_2_latent.png" alt="" style="width:350px;height:300px;max-width:47.5%;max-height:45%;"/>
 
 							<p>
-								The two charts above are of two different sets of data from the same track. I collected data by driving the donkeycar
-								around the track about 15 times for each dataset using a playstation 3 controller. The chart on the left shows my first 
-								attempt at collecting data which was admittedly poor and caused the autopilot to crash frequently. However, on the second 
-								try I collected much better data which resulted in the car driving smoothly within the bounds of the track. Using the data
-								from the second attempt, I trained different models including linear, 3D, RNN, categorical, and latent in which the latent model
-								performed the best.
+								The two charts above are of two different sets of data from the same track. I collected data by driving the donkeycar around the track about 15 times for each dataset using a playstation 3 controller. The chart on the left shows my first attempt at collecting data which was admittedly poor and caused the autopilot to crash frequently. However, on the second try I collected much better data which resulted in the car driving smoothly within the bounds of the track. Using the data from the second attempt, I trained different models including linear, 3D, RNN, categorical, and latent in which the latent model performed the best.
 							</p>
 							
 							<video style="min-width: 48%;max-width:60%;height:400px" controls>
 								<source src="images/traffic2.mp4" type="video/mp4" style = "float: right;">
 							</video> 
-							<p>The video above shows a side project using the donkeycar's camera, ROS, yolov3, and Keras. The traffic sign detection
-								and classification models were created by modifying and merging code from two different people, Murtaza Hassan and Sergio 
-								from Pysource (links at bottom). Then I implemented ROS to relay information from the camera by subscribing to the 
-								raspicam_node topic. I intended to then use ROS to implement low level control for the car based off the specific
-								traffic signs being seen, however, the framerate from the camera was far too low for it to be useful. 
+							<p>
+								The video above shows a side project using the donkeycar's camera, ROS, yolov3, and Keras. The traffic sign detection and classification models were created by modifying and merging code from two different people, Murtaza Hassan and Sergio from Pysource (links at bottom). Then I implemented ROS to relay information from the camera by subscribing to the raspicam_node topic. I intended to then use ROS to implement low level control for the car based off the specific traffic signs being seen, however, the framerate from the camera was far too low for it to be us
 							</p>
 
 							<h5>Sources</h5>
@@ -384,16 +415,11 @@
 
 							</p>
 							<p>
-								This is a 4 DOF arm with a gripper end effector designed to be placed on top of an RC car to pick up tennis balls. I was
-								responsible for designing the arm structure including the base, the first linkage, and the second linkage. I designed this
-								structure in SolidWorks with my main design considerations being safety, due to the future users being middle and high school
-								students, and simplicity for the same reason. 
+								This is a 4 DOF arm with a gripper end effector designed to be placed on top of an RC car to pick up tennis balls. I was responsible for designing the arm structure including the base, the first linkage, and the second linkage. I designed this structure in SolidWorks with my main design considerations being safety, due to the future users being middle and high school students, and simplicity for the same reason.
 							</p>
 
 							<p>
-								The main challenge I faced with this project was maintaining the simplicity of the structure while being able to properly
-								manage cables that came from the gripper, camera, and servos. These factors heavily shaped the design, and it taught me a lot
-								about how certain requirements can control a large portion of the design work. 
+								The main challenge I faced with this project was maintaining the simplicity of the structure while being able to properly manage cables that came from the gripper, camera, and servos. These factors heavily shaped the design, and it taught me a lot about how certain requirements can control a large portion of the design work. 
 							</p>
 
 							<video style="min-width: 48%;max-width:48%;height:400px" controls>
@@ -401,9 +427,96 @@
 							</video> 
 
 							<p>
-								While in this project, I also played a part in developing a MATLAB simulation that would represent the team's control strategy for moving the 
-								end effector. This control strategy involved having a user input certain keys to move or rotate the end effector a set distance in a certain direction.
-								Then using that desired end effector position, inverse kinematics would be used to relay information on how to rotate each of the linkage joints.
+								While in this project, I also played a part in developing a MATLAB simulation that would represent the team's control strategy for moving the end effector. This control strategy involved having a user input certain keys to move or rotate the end effector a set distance in a certain direction. Then using that desired end effector position, inverse kinematics would be used to relay information on how to rotate each of the linkage joints. 
+							</p>
+
+						</article>
+						<article id="shredder">
+							<h2 class="major">Shredder</h2>
+							<img src ="images/robotic arm image.png" style ="min-width:70%;height: 450px;margin-left: auto; margin-right: auto;display: block;"/>
+							<p>
+								During my role as lead mechanical engineer at simplehuman, I led the mechanical design of the simplehuman shredder, guiding the product from early concept through to full-scale production. Throughout development, I drove iterative design efforts, sourcing prototype components from local and overseas vendors, assembling and testing prototypes, and collaborating closely with hardware engineers, software engineers, quality engineers, industrial designers, and product leads to refine the design and user experience.
+							</p>
+							<p>
+								As the design neared finalization, I focused on Design for Manufacturing (DFM) and Design for Assembly (DFA), working directly with overseas manufacturers to ensure a seamless transition to production. I traveled internationally for pre-production and production trials to verify product functionality, optimize assembly efficiency, and resolve any last-minute manufacturing challenges.
+							</p>
+
+							<p>
+								This experience enhanced my capabilities as both a mechanical engineer and project leader, particularly in:
+							</p>
+
+							<p>
+								1. Hands-on prototyping
+							</p>
+							<p>
+								2. Mechanical design
+							</p>
+							<p>
+								3. Cross-functional team communication
+							</p>
+							<p>
+								4. DFM/DFA for plastic injection molding and sheet metal
+							</p>
+							<p>
+								5. UL regulation compliance
+							</p>
+
+							<p>
+								I took a hands-on approach to prototyping, utilizing in-house SLA/FDM 3D printers, laser cutters, and general shop tools for rapid iteration while sourcing CNC and sheet metal parts externally. By meticulously documenting and analyzing prototype issues, I distinguished between design-related and prototype-related flaws, allowing for targeted refinements. Through functional testing, I ensured the product met all performance requirements before advancing to the next stage.
+							</p>
+
+							<p>
+								By combining hands-on prototyping with iterative design improvements, I developed an intuitive understanding of how mechanical components interact in real-world conditions. This allowed me to identify potential design flaws before they became costly manufacturing issues. I also ensured that the final design was optimized for ease of assembly, reducing complexity while maintaining functionality and aesthetics.
+							</p>
+							<p>
+								Working closely with firmware, electrical, industrial design, and quality teams, I ensured that mechanical design decisions aligned with broader product requirements. Given the electromechanical nature of the product, I prioritized concise and proactive communication, keeping all stakeholders aligned before implementing design changes. Regular touchpoints and structured updates helped maintain momentum and prevent misalignment between teams.
+							</p>
+							<p>
+								As the design was close to being finalized, I collaborated with overseas manufacturers to refine plastic injection-molded and sheet metal components for scalable production. I worked closely with vendors to improve manufacturability while preserving product aesthetics and user experience. During pre-production trials, I verified part tolerances, assembly efficiency, and production consistency, addressing any issues that arose before full-scale manufacturing.
+							</p>
+							<p>
+								Finally, I learned how to navigate the UL certification process by collaborating with compliance consultants to review, test, and adjust the design to meet mechanical and electrical safety standards. I ensured all regulatory requirements were met for a seamless certification process.
+							</p>
+						</article>
+
+						<article id="sensorcan">
+							<h2 class="major">Sensor Can</h2>
+							<img src ="images/robotic arm image.png" style ="min-width:70%;height: 450px;margin-left: auto; margin-right: auto;display: block;"/>
+							<p>
+
+							</p>
+							<p>
+								During my role as lead mechanical engineer at simplehuman, I led the mechanical design of the next-generation simplehuman sensor can, a complete revamp of the previous model aimed at enhancing product reliability and user experience. This redesign introduced new sensor technologies that had not yet been implemented in other simplehuman products, requiring extensive iterative testing and validation. I collaborated closely with software and hardware engineers to integrate these technologies while maintaining seamless functionality. Additionally, I worked with industrial designers, quality engineers, and external vendors to ensure mechanical improvements positively impacted both reliability and user interaction.
+							</p>
+
+							<p>
+								This project strengthened my expertise as both a mechanical engineer and project leader, particularly in:
+							</p>
+
+							<p>
+								1. Mechanical validation and testing
+							</p>
+							<p>
+								2. Mechanical design
+							</p>
+							<p>
+								3. Vendor communication
+							</p>
+							<p>
+								4. DFM/DFA for plastic injection molding and sheet metal
+							</p>
+
+							<p>
+								A key focus of the redesign was improving drive mechanism reliability while refining the lid's user interaction. In the previous model, if the lid opened under a desk, it would slam shut abruptly due to the lower strength of the internal mechanism. In contrast, the new design introduces a controlled soft-close in most standard user scenarios, only slamming if the user applies sufficient force. Though seemingly minor, this change required modifications to nearly every mechanical component within the drive mechanism.
+							</p>
+							<p>
+								1. For OTS components, I conducted technical discussions with suppliers to review our application, ensuring proposed modifications were both cost-effective and time-sensitive. Solutions often required coordinated design adjustments on both sides to meet reliability and performance targets.
+							</p>
+							<p>
+								2. For custom-designed parts, I collaborated with contract manufacturers to determine whether failures stemmed from design limitations or manufacturing inconsistencies. I then implemented targeted design updates or adjusted manufacturing parameters accordingly.
+							</p>
+							<p>
+								Throughout the refinement process, I worked alongside quality engineers, electrical engineers, and product leads to source, assemble, and test updated prototypes. Each iteration was subjected to rigorous lifecycle testing to ensure the changes met our high standards for durability and long-term reliability.
 							</p>
 
 						</article>
