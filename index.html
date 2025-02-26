@@ -15,6 +15,27 @@
 		<link rel="stylesheet" href="assets/css/lightbox.css"/>
 		<script src="assets/js/lightbox.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			window.addEventListener('load', function() {
+				// Get all close buttons in project articles
+				const projectIds = ['shredder', 'sensorcan', 'rop', 'agario_controller', 
+								  'workout_data', 'donkeycar', 'balance_bot'];
+								  
+				projectIds.forEach(id => {
+					const article = document.getElementById(id);
+					if (article) {
+						const closeButton = article.querySelector('.close');
+						if (closeButton) {
+							closeButton.addEventListener('click', function(e) {
+								e.preventDefault();
+								e.stopPropagation();
+								window.location.hash = 'projects';
+							});
+						}
+					}
+				});
+			});
+		</script>
 		<style>
 			/* Remove outline from all links and images */
 			a, a:active, a:focus, a:hover,
