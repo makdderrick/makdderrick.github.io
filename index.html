@@ -15,6 +15,33 @@
 		<link rel="stylesheet" href="assets/css/lightbox.css"/>
 		<script src="assets/js/lightbox.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Remove outline from all links and images */
+			a, a:active, a:focus, a:hover,
+			img, img:active, img:focus {
+				outline: 0;
+				border: none;
+				-moz-outline-style: none;
+				box-shadow: none;
+				text-decoration: none;
+			}
+		
+			/* Remove dotted outline in Firefox */
+			a:focus, a:active,
+			button::-moz-focus-inner,
+			input[type="reset"]::-moz-focus-inner,
+			input[type="button"]::-moz-focus-inner,
+			input[type="submit"]::-moz-focus-inner {
+				border: none;
+				outline: none;
+			}
+		
+			/* Remove outline in webkit browsers */
+			*:focus {
+				outline: none;
+				-webkit-tap-highlight-color: transparent;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -49,10 +76,10 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<img src="images/toughmudderpic.jpg" alt="" style="height:300px; width:300px; border-radius:50%; display:block; margin-left:auto; margin-right:auto; object-fit:cover;"/>
+								<img src="images/toughmudderpic_edited.jpg" alt="" style="height:300px; width:300px; border-radius:50%; display:block; margin-left:auto; margin-right:auto; object-fit:cover;"/>
 								<br>
 								<p>
-									Passionate and results-driven Mechanical Engineer with 4 years of experience in consumer electronics, specializing in product design and manufacturing. I thrive at the intersection of innovation and practicality, turning ideas into high-quality, manufacturable products that make a real impact.
+									Passionate and results-driven mechanical engineer with 4 years of experience in consumer electronics, specializing in product design and manufacturing. I thrive at the intersection of innovation and practicality, turning ideas into high-quality, manufacturable products that make a real impact.
 									<br>
 									<br>
 									Outside of engineering, I love lifting weights, playing volleyball, and eating good food.
@@ -416,12 +443,10 @@
 
 							</p>
 							<p>
-								This is a 4 DOF arm with a gripper end effector designed to be placed on top of an RC car to pick up tennis balls. I was responsible for designing the arm structure including the base, the first linkage, and the second linkage. I designed this structure in SolidWorks with my main design considerations being safety, due to the future users being middle and high school students, and simplicity for the same reason.
-							</p>
+								This is a 4 DOF arm with a gripper end effector designed to be placed on top of an RC car to pick up tennis balls. I was responsible for designing the arm structure including the base, the first linkage, and the second linkage. I designed this structure in SolidWorks with my main design considerations being safety, due to the future users being middle and high school students, and simplicity for the same reason.							</p>
 
 							<p>
-								The main challenge I faced with this project was maintaining the simplicity of the structure while being able to properly manage cables that came from the gripper, camera, and servos. These factors heavily shaped the design, and it taught me a lot about how certain requirements can control a large portion of the design work. 
-							</p>
+								The main challenge I faced with this project was maintaining the simplicity of the structure while being able to properly manage cables that came from the gripper, camera, and servos. These factors heavily shaped the design, and it taught me a lot about how certain requirements can control a large portion of the design work. 							</p>
 
 							<video style="min-width: 48%;max-width:48%;height:400px" controls>
 								<source src="images/arm_simulation.mp4" type="video/mp4" style = "float: left;">
@@ -460,7 +485,7 @@
 								Working closely with firmware, electrical, industrial design, and quality teams, I ensured that mechanical design decisions aligned with broader product requirements. Given the electromechanical nature of the product, I prioritized concise and proactive communication, keeping all stakeholders aligned before implementing design changes. Regular touchpoints and structured updates helped maintain momentum and prevent misalignment between teams.
 							</p>
 							<p>
-								As the design was close to being finalized, I collaborated with overseas manufacturers to refine plastic injection-molded and sheet metal components for scalable production. I worked closely with vendors to improve manufacturability while preserving product aesthetics and user experience. During pre-production trials, I verified part tolerances, assembly efficiency, and production consistency, addressing any issues that arose before full-scale manufacturing.
+								As the product neared production, I collaborated with overseas manufacturers to refine plastic injection-molded and sheet metal components for scalable production. I worked closely with vendors to improve manufacturability while preserving product aesthetics and user experience. During pre-production trials, I verified part tolerances, assembly efficiency, and production consistency, addressing any issues that arose before full-scale manufacturing.
 							</p>
 							<p>
 								Finally, I learned how to navigate the UL certification process by collaborating with compliance consultants to review, test, and adjust the design to meet mechanical and electrical safety standards. I ensured all regulatory requirements were met for a seamless certification process.
@@ -479,16 +504,10 @@
 							</p>
 
 							<p>
-								1. Mechanical validation and testing
-							</p>
-							<p>
-								2. Mechanical design
-							</p>
-							<p>
-								3. Vendor communication
-							</p>
-							<p>
-								4. DFM/DFA for plastic injection molding and sheet metal
+								1. Mechanical validation and testing <br>
+								2. Mechanical design <br>
+								3. Vendor communication <br>
+								4. DFM/DFA for plastic injection molding and sheet metal <br>
 							</p>
 
 							<p>
@@ -545,6 +564,12 @@
 							<h6>(click back arrow to return)</h6>
 							<div class="row">
 								<div class="column">
+									<a href="images/cold_brew_video.mp4" data-lightbox="easel" data-title="easel">
+										<img src="images/cold_brew.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									</a>
+									<a href="images/lockbox_video_2.mp4" data-lightbox="easel" data-title="easel">
+										<img src="images/lockbox.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
+									</a>
 									<a href="images/vert_jump_tester.jpg" data-lightbox="easel" data-title="easel">
 										<img src="images/vert_jump_tester.jpg" width="200px" height="200px" style="min-width: 30%;max-width: 30%;">
 									</a>
@@ -857,7 +882,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				
 					<footer id="footer">
 						
-						<p style = " font-size: 15px;">Trying to improve everyday.</p>
+						<p style = " font-size: 15px;"></p>
 					</footer>
 
 			</div>
